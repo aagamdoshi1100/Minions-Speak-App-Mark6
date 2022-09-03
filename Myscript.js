@@ -1,6 +1,7 @@
 
-var Askname = prompt("What is your name?")
 
+var Buttn= document.querySelector('#Cl');
 
-
-alert('Hello World' + Askname);
+Buttn.addEventListener("Click", function clickEventHandler(){
+    console.log("Clickedd!!")
+})
