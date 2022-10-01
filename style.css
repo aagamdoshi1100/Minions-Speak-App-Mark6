@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+
+textarea{
+    font-size: 18px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 10px;
+}
+h1{
+    background-color: yellow;
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+    margin-top: 0px;
+}
+button{
+    margin: auto;
+    margin-top: 30px;
+    padding: 15px;
+}
+p{
+    margin: auto;
+    margin-top: 20px;
+}
