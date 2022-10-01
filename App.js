@@ -6,11 +6,13 @@ var OutputArea = document.querySelector("#Output");
 // console.log(Buttn)
 // console.log(TextInputArea)
 
-var URL = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json";
+var URL = "https://api.funtranslations.com/translate/minion.json";
 
 function ConnectionURL(text1){  
-
-    return finalUrl = URL + "?" + "text=" + text1;
+    console.log(text1);
+    var finalUrl = URL + "?" + "text=" + text1;
+    console.log(finalUrl);
+    return finalUrl;
 }
 
 function errorHandler(error){
@@ -19,13 +21,15 @@ function errorHandler(error){
 
 function ClickHandler(){
 
-    var text = TextInputArea.innerText;
+    var text = TextInputArea.value;
+    console.log(text);
 
     fetch(ConnectionURL(text))
     .then(response => response.json())
-    .then(json => {
+    .then(json => {console.log(json);
         var TranslatedText = json.contents.translated;
-        OutputArea.innerText =  TranslatedText;
+        console.log(TranslatedText);
+        OutputArea.innerText = TranslatedText;
     })
     .catch(errorHandler)
     // console.log(Buttn);
