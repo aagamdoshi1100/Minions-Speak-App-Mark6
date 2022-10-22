@@ -1,10 +1,10 @@
-#Translator App 
+# Translator App 
 
 This App will traanslate the text into the minions language.
 
 This App has been created for Fun purpose.
 
-#What's new in this
+### What's new in this
 
 fetch() =  method is used to request and load the data into the web page.
 
